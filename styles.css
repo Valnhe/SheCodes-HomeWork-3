@@ -1,0 +1,105 @@
+:root {
+  --primary-color: #fef6e4;
+  --secondary-color: #f592ae;
+  --ternary-color: #001858;
+  --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+main {
+  margin: 100px auto;
+}
+
+h1 {
+  font-size: 96px !important;
+  margin: 0 !important;
+}
+
+h2 {
+  font-size: 48px !important;
+  margin: 0 !important;
+}
+
+h3 {
+  font-size: 24px !important;
+  opacity: 0.7;
+  margin: 0 !important;
+}
+
+.about-body {
+  overflow-y: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 50px !important;
+  }
+  h2 {
+    font-size: 30px !important;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+
+  p {
+    font-size: 16px !important;
+  }	
+
+  .about-body {
+    overflow-y: auto;
+  }
+  
+}
+
+.button-links {
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.links,
+.button-links a {
+  margin: 20px;
+  padding: 20px 15px;
+  text-decoration: none;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+}
+
+.about-button {
+  color: var(--secondary-color);
+}
+
+.about-button:hover {
+  background-color: var(--secondary-color);
+  color: white;
+  box-shadow: var(--box-shadow);
+}
+
+.contact-button {
+  background-color: var(--secondary-color);
+  color: white;
+  box-shadow: var(--box-shadow);
+}
+.contact-button:hover {
+  background-color: var(--ternary-color);
+  color: white;
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--ternary-color);
+}
+
+.about-p {
+  margin: 30px;
+  font-size: 18px;
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--ternary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
